@@ -12,6 +12,8 @@
 
 **Obs**: não se esqueça de configurar seu banco de dados no arquivo [ConnectionFactory.java](/java/br/edu/astrotoystore/util/ConnectionFactory.java)
 
+**Obs(2)**: o repositório deve estar dentro de uma pasta nomeada como "SistemaAcademico-web"
+
 
 Antes de inciar o projeto execute o seguinte código SQL:
 ```SQL
