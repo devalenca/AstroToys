@@ -24,7 +24,7 @@ use astrotoy;
 -- Criação da tabela Categoria
 CREATE TABLE Categoria (
     idCategoria INT AUTO_INCREMENT PRIMARY KEY,
-    nomeCategoria VARCHAR(255) NOT NULL,
+    nomeCategoria VARCHAR(300) NOT NULL,
     faixa_etaria VARCHAR(50),
     imgCategoria VARCHAR(255)
 );
@@ -36,7 +36,7 @@ CREATE TABLE Produto (
     idCategoria INT,
     nomeProduto VARCHAR(255) NOT NULL,
     precoUnitario DECIMAL(10, 2) NOT NULL,
-    imgProduto VARCHAR(255),
+    imgProduto VARCHAR(300),
     descricao TEXT,
     FOREIGN KEY (idCategoria) REFERENCES Categoria(idCategoria)
 );
@@ -51,3 +51,7 @@ CREATE TABLE Usuario (
 
 INSERT INTO usuario (nome, username, senha) VALUES ("Admin", "admin", "admin#@123!")
 ```
+
+### Tela inicial com os produtos cadastrados
+
+![WhatsApp Image 2023-10-31 at 22 54 22](https://github.com/devalenca/AstroToys/assets/117116076/0fafd3e1-352d-4e13-92b1-2b06ff910476)
